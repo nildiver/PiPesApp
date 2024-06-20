@@ -8,22 +8,27 @@ import { UncommonPagesComponent } from './pages/uncommon-pages/uncommon-pages.co
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrderComponent } from './pages/order/order.component';
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
+import { CanflyCasePipe } from './pipes/canfly-case.pipe';
+import { SotByPipe } from "./pipes/sotBy.pipe";
 
 
 
 @NgModule({
-  declarations: [
+    declarations: [
         BasicsPagesComponent,
         NumbersPagesComponent,
         UncommonPagesComponent,
         OrderComponent,
         //PiPes
         ToggleCasePipe,
-  ],
-  imports: [
-    CommonModule,
-    ProductsRoutingModule,
-    PrimeNgModule
-  ]
+        CanflyCasePipe,
+        SotByPipe
+    ],
+    imports: [
+        CommonModule,
+        ProductsRoutingModule,
+        PrimeNgModule,
+
+    ]
 })
 export class ProductsModule { }
